@@ -4,3 +4,7 @@ knowledge:
   label: Knowledge
 architecture:
   label: Architecture
+integration-engineering:
+  label: Integration engineering
+design-patterns:
+  label: Design patterns

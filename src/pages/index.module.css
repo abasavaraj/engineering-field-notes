@@ -23,7 +23,8 @@
 }
 
 .hero h1,
-.featured h2 {
+.featured h2,
+.topics h2 {
   color: var(--ifm-heading-color);
   font-family: Georgia, 'Times New Roman', serif;
   font-weight: 400;
@@ -129,12 +130,14 @@
 
 .agentOne {
   left: 2.2rem;
+  padding-right: 1.5rem;
   border: 1px solid #507d72;
   background: rgba(80, 125, 114, 0.32);
 }
 
 .agentTwo {
   right: 2.2rem;
+  padding-left: 1.5rem;
   border: 1px solid #bf8355;
   background: rgba(191, 131, 85, 0.32);
 }
@@ -161,6 +164,50 @@
   text-align: center;
   letter-spacing: 0.04em;
   text-transform: none;
+}
+
+.topics {
+  padding: 2.8rem 0 3.4rem;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.topics h2 {
+  margin: 0.65rem 0 1.8rem;
+  font-size: clamp(2rem, 3.3vw, 3rem);
+}
+
+.topicGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.topicGrid article {
+  min-height: 190px;
+  padding: 1.35rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 0.45rem;
+  background: var(--ifm-background-surface-color);
+}
+
+.topicGrid article span {
+  color: var(--ifm-color-primary);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.topicGrid article h3 {
+  margin: 0.9rem 0 0.45rem;
+  font-size: 1.35rem;
+}
+
+.topicGrid article p {
+  margin: 0;
+  color: var(--ifm-color-content-secondary);
+  font-size: 0.93rem;
+  line-height: 1.6;
 }
 
 .featured {
@@ -202,6 +249,10 @@
   .diagram {
     max-width: 520px;
   }
+
+  .topicGrid {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 @media (max-width: 600px) {
@@ -216,5 +267,13 @@
 
   .featured {
     display: block;
+  }
+
+  .topicGrid {
+    grid-template-columns: 1fr;
+  }
+
+  .topicGrid article {
+    min-height: 0;
   }
 }

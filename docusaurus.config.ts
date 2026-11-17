@@ -5,8 +5,8 @@ import type * as Preset from '@docusaurus/preset-classic';
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Agent Context Notes',
-  tagline: 'Practical notes on shared knowledge, specialized agents, and human review.',
+  title: 'Engineering Field Notes',
+  tagline: 'Practical patterns for integrations, AI systems, and reliable software.',
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
     v4: true, // Improve compatibility with the upcoming Docusaurus v4
@@ -16,12 +16,12 @@ const config: Config = {
   url: 'https://abasavaraj.github.io',
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/agent-context-notes/',
+  baseUrl: '/engineering-field-notes/',
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
   organizationName: 'abasavaraj',
-  projectName: 'agent-context-notes',
+  projectName: 'engineering-field-notes',
 
   onBrokenLinks: 'throw',
 
@@ -63,7 +63,7 @@ const config: Config = {
       respectPrefersColorScheme: true,
     },
     navbar: {
-      title: 'Agent Context Notes',
+      title: 'Engineering Field Notes',
       items: [
         {
           type: 'docSidebar',
