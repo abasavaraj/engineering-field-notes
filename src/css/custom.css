@@ -1,0 +1,33 @@
+:root {
+  --ifm-color-primary: #a3482d;
+  --ifm-color-primary-dark: #923f27;
+  --ifm-color-primary-darker: #873a25;
+  --ifm-color-primary-darkest: #73311f;
+  --ifm-color-primary-light: #b55435;
+  --ifm-color-primary-lighter: #bf603e;
+  --ifm-color-primary-lightest: #ce795b;
+  --ifm-background-color: #faf7f1;
+  --ifm-background-surface-color: #fffdf9;
+  --ifm-font-family-base: 'Avenir Next', 'Segoe UI', sans-serif;
+  --ifm-heading-font-family: Georgia, 'Times New Roman', serif;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme='dark'] {
+  --ifm-color-primary: #e3a17c;
+  --ifm-color-primary-dark: #d78e67;
+  --ifm-color-primary-darker: #cd8058;
+  --ifm-color-primary-darkest: #b76b43;
+  --ifm-color-primary-light: #edb392;
+  --ifm-color-primary-lighter: #f0bc9f;
+  --ifm-color-primary-lightest: #f4cbb2;
+  --ifm-background-color: #171b1a;
+  --ifm-background-surface-color: #202624;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+.navbar {
+  box-shadow: none;
+  border-bottom: 1px solid var(--ifm-color-emphasis-300);
+}
